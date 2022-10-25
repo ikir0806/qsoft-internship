@@ -1,0 +1,13 @@
+import './svg/instagram.svg';
+import './svg/loupe.svg';
+import './svg/qsoft.svg';
+import './svg/youtube.svg';
+import './svg/like.svg';
+import './svg/comment.svg';
+import './svg/view.svg';
+import './svg/star.svg';
+import './svg/arrow.svg';
+import './svg/arrow-select.svg';
+import './svg/arrow-breadspreads.svg';
+import './svg/exclamation.svg';
+import './svg/question.svg';

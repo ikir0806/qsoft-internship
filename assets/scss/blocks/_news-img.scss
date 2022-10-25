@@ -1,0 +1,12 @@
+.news-img {
+    width: 100%;
+    height: rem(159px);
+    object-fit: cover;
+    border-radius: rem(8px) rem(8px) 0 0;
+
+    &-special {
+        height: 100%;
+        position: absolute;
+        opacity: 0.3;
+    }
+}

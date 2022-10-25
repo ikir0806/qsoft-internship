@@ -1,0 +1,65 @@
+.search-mobile {
+    display: block;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: rem(40px);
+    position: relative;
+
+    @media #{$screen-tablet} {
+        display: none;
+    }
+
+    @media #{$screen-desktop} {
+        display: none;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: rem(16px);
+        height: rem(16px);
+        background: transparent;
+        top: rem(12px);
+        left: rem(14px);
+        background-image: url("../../img/loupe.png");
+        background-size: rem(16px) rem(16px);
+    }
+}
+
+.search-mobile__input {
+    display: block;
+    min-height: 40px;
+    border: 1px solid #EBEBF1;
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    @media #{$screen-tablet} {
+        display: none;
+    }
+
+    @media #{$screen-desktop} {
+        display: none;
+    }
+
+    &::placeholder {
+        display: block;
+        color: #BBC4D6;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+
+        @media #{$screen-tablet} {
+            display: none;
+        }
+
+        @media #{$screen-desktop} {
+            display: none;
+        }
+    }
+}

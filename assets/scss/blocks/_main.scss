@@ -1,0 +1,26 @@
+.main {
+    background-color: $background-color;
+    padding: rem(105px) 0 rem(100px) 0;
+    left: 0;
+    right: 0;
+    min-width: rem(375px);
+
+    @media #{$screen-tablet} {
+        padding-top: rem(80px);
+    }
+
+    @media #{$screen-desktop} {
+        padding-top: rem(80px);
+    }
+
+    &-profile {
+        display: flex;
+        flex-direction: column;
+
+        @media #{$screen-desktop} {
+            flex-direction: row;
+            column-gap: rem(32px);
+        }
+    }
+    max-width: rem(1920px);
+}

@@ -1,0 +1,67 @@
+.form {
+    margin-bottom: rem(20px);
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        color: $bunker;
+        font-size: $font-size-base-small;
+        font-weight: $font-weight-regular;
+        font-family: $font-family-custom;
+
+        &-disabled {
+            color: $heather;
+        }
+    }
+
+    &__star {
+        color: $red;
+
+        &-disabled {
+            display: none;
+        }
+    }
+
+    &__input {
+        width: rem(311px);
+        height: rem(46px);
+        border: 1px solid $athens-gray;
+        border-radius: $border-radius;
+        color: $heather;
+        font-size: $font-size-base-small;
+        font-weight: $font-weight-regular;
+        font-family: $font-family-custom;
+        padding-left: rem(20px);
+
+        &:hover {
+            border: 1px solid $slate-gray;
+            color: $bunker;
+        }
+
+        &:valid {
+            &__error {
+                display: block;
+                color: $red;
+            }
+        }
+
+        &:disabled {
+            background-color: $athens-gray;
+        }
+
+        &-error {
+            border: 1px solid $red;
+        }
+    }
+
+    &__error {
+        margin: 0;
+        color: $red;
+        font-size: rem(10px);
+        font-weight: $font-weight-regular;
+        font-family: $font-family-custom;
+    }
+}

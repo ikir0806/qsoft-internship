@@ -1,0 +1,28 @@
+.menu {
+    display: flex;
+    align-items: center;
+    height: rem(50px);
+    width: 100%;
+    background-color: $white;
+    gap: rem(12px);
+
+    @media #{$screen-desktop} {
+        display: none;
+    }
+
+    &__button {
+        margin-left: auto;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        display: flex;
+    }
+
+    &__text {
+        font-family: $font-family-custom;
+        font-size: $font-size-base-medium;
+        font-weight: 700;
+        color: $curious-blue;
+        margin-right: auto;
+    }
+}

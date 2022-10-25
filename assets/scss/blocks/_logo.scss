@@ -1,0 +1,19 @@
+.logo {
+    height: rem(63px);
+    display: flex;
+    align-items: center;
+    padding-left: rem(20px);
+
+    @media #{$screen-tablet} {
+        height: rem(80px);
+    }
+
+    @media #{$screen-desktop} {
+        height: rem(80px);
+    }
+
+    &-img {
+        width: rem(135px);
+        height: rem(30px);
+    }
+}

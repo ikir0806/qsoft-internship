@@ -1,0 +1,143 @@
+html {
+    font-family: $font-family-default;
+    color: $white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: $font-family-default;
+    font-size: $font-size-title-big;
+    color: $color-text;
+}
+
+h2 {
+    font-family: $font-family-default;
+    font-size: $font-size-title-medium;
+    color: $color-text;
+}
+
+h3 {
+    font-family: $font-family-default;
+    font-size: $font-size-title-small;
+    color: $color-text-h3;
+}
+
+p {
+    font-family: $font-family-custom;
+    font-size: $font-size-base-medium;
+    color: $color-text;
+}
+
+ol {
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+blockquote {
+    font-family: $font-family-custom;
+    font-size: $font-size-base-medium;
+    color: $color-text;
+}
+
+a {
+    font-family: $font-family-custom;
+    font-size: $font-size-base-medium;
+    color: $curious-blue;
+    text-decoration: none;
+}
+
+.icon {
+    &--youtube {
+        fill: $heather;
+        width: rem(40px);
+        height: rem(40px);
+
+        &:hover {
+            fill: $slate-gray;
+        }
+    }
+
+    &--instagram {
+        fill: $heather;
+        width: rem(40px);
+        height: rem(40px);
+
+        &:hover {
+            fill: $slate-gray;
+        }
+    }
+
+    &--qsoft {
+        fill: $heather;
+        width: rem(135px);
+        height: rem(26px);
+        display: flex;
+        padding-left: rem(20px);
+
+        &:hover {
+            fill: $slate-gray;
+        }
+
+        @media #{$screen-tablet} {
+            padding-left: 0;
+        }
+
+        @media #{$screen-desktop} {
+            padding-left: 0;
+        }
+    }
+
+    &--loupe {
+        stroke: $slate-gray;
+        width: rem(16px);
+        height: rem(16px);
+        fill: none;
+    }
+
+    &--exclamation {
+        width: rem(24px);
+        height: rem(24px);
+        fill: $red;
+        top: rem(16px);
+        right: rem(16px);
+        position: absolute;
+
+        &-blue {
+            width: rem(24px);
+            height: rem(24px);
+            fill: $wild-blue-yonder;
+            top: rem(16px);
+            right: rem(16px);
+            position: absolute;
+        }
+    }
+
+    &--question {
+        width: rem(24px);
+        height: rem(24px);
+        fill: $wild-blue-yonder;
+        top: rem(16px);
+        right: rem(16px);
+        position: absolute;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}

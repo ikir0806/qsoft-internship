@@ -1,0 +1,28 @@
+.specials-img {
+    width: 100%;
+    height: rem(159px);
+    object-fit: cover;
+    border-radius: rem(8px) rem(8px) 0 0;
+
+    @media #{$screen-tablet} {
+        border-radius: 0 rem(8px) rem(8px) 0;
+        height: 100%;
+        width: percentage(46/100);
+
+        &-left {
+            border-radius: rem(8px) 0 0 rem(8px);
+            height: auto;
+        }
+    }
+
+    @media #{$screen-desktop} {
+        border-radius: 0 rem(8px) rem(8px) 0;
+        height: 100%;
+        width: percentage(46/100);
+
+        &-left {
+            border-radius: rem(8px) 0 0 rem(8px);
+            height: auto;
+        }
+    }
+}

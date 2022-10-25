@@ -1,0 +1,120 @@
+.icon {
+    &--youtube {
+        fill: $heather;
+        width: rem(40px);
+        height: rem(40px);
+
+        &:hover {
+            fill: $slate-gray;
+        }
+    }
+
+    &--instagram {
+        fill: $heather;
+        width: rem(40px);
+        height: rem(40px);
+
+        &:hover {
+            fill: $slate-gray;
+        }
+    }
+
+    &--qsoft {
+        fill: $heather;
+        width: rem(135px);
+        height: rem(26px);
+        display: flex;
+        padding-left: rem(20px);
+
+        &:hover {
+            fill: $slate-gray;
+        }
+
+        @media #{$screen-tablet} {
+            padding-left: 0;
+        }
+
+        @media #{$screen-desktop} {
+            padding-left: 0;
+        }
+    }
+
+    &--loupe {
+        stroke: $slate-gray;
+        width: rem(16px);
+        height: rem(16px);
+        fill: none;
+    }
+
+    &--like {
+        stroke: $slate-gray;
+        width: rem(13px);
+        height: rem(12px);
+        fill: none;
+    }
+
+    &--comment {
+        stroke: $slate-gray;
+        width: rem(14px);
+        height: rem(12px);
+        fill: none;
+    }
+
+    &--view {
+        width: rem(15px);
+        height: rem(8px);
+        fill: none;
+    }
+
+    &--star {
+        width: rem(23px);
+        height: rem(22px);
+        fill: $curious-blue;
+        margin: auto;
+    }
+
+    &--filled-star {
+        width: rem(23px);
+        height: rem(22px);
+        fill: $curious-blue;
+        margin: auto;
+    }
+
+    &--arrow {
+        width: rem(12px);
+        height: rem(11px);
+        fill: none;
+        stroke: $white;
+        margin-right: auto;
+    }
+
+    &--arrow-select {
+        width: rem(12px);
+        height: rem(7px);
+        fill: none;
+        stroke: $wild-blue-yonder;
+        position: absolute;
+        top: rem(38px);
+        right: rem(15px);
+        pointer-events: none;
+        width: rem(12px);
+        height: rem(7px);
+
+        &:active {
+            transform: rotate(180deg);
+        }
+    }
+
+    &--menu {
+        width: rem(21px);
+        height: rem(14px);
+        fill: $curious-blue;
+        margin: auto;
+    }
+
+    &--arrow-breadspreads {
+        width: rem(6px);
+        height: rem(10px);
+        fill: $heather;
+    }
+}

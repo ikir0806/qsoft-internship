@@ -1,0 +1,13 @@
+.link {
+    text-decoration: none;
+    color: $curious-blue;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active {
+        text-decoration: underline;
+        opacity: 0.5;
+    }
+}

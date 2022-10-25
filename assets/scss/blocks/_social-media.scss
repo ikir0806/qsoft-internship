@@ -1,0 +1,28 @@
+.social-media {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-top: rem(20px);
+    padding-bottom: rem(20px);
+    gap: rem(23px);
+
+    @media #{$screen-tablet} {
+        padding-top: 0;
+        padding-left: rem(20px);
+        padding-bottom: 0;
+    }
+
+    @media #{$screen-desktop} {
+        padding-top: 0;
+        padding-left: rem(20px);
+        padding-bottom: 0;
+    }
+
+    &__link {
+        color: $heather;
+    }
+
+    &__link:hover {
+        color: $slate-gray;
+    }
+}

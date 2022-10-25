@@ -1,0 +1,19 @@
+.unfilled-button {
+    background-color: transparent;
+    border: none;
+    color: $curious-blue;
+
+    &:hover {
+        color: $button-hover;
+    }
+
+    &:active {
+        color: $button-hover;
+        opacity: 0.5;
+    }
+
+    &:disabled {
+        color: $disabled-color;
+        opacity: 0.5;
+    }
+}

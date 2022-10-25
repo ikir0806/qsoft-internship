@@ -1,0 +1,14 @@
+.container {
+    display: none;
+    max-width: rem(1240px);
+    width: 100%;
+
+    @media #{$screen-tablet} {
+        display: block;
+    }
+
+    @media #{$screen-desktop} {
+        display: block;
+    }
+
+}

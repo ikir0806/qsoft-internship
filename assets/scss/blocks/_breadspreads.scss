@@ -1,0 +1,24 @@
+.breadspreads {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: rem(20px);
+    height: rem(32px);
+    margin-top: rem(50px);
+    padding-left: rem(20px);
+    margin-bottom: rem(10px);
+
+    @media #{$screen-desktop} {
+        padding-left: 0;
+    }
+
+    &__item {
+        font-family: $font-family-custom;
+        font-size: $font-size-base-big;
+        font-weight: $font-family-custom;
+        color: $heather;
+
+        &-last {
+            color: $slate-gray;
+        }
+    }
+}

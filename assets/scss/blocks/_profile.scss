@@ -1,0 +1,59 @@
+.profile {
+    display: none;
+
+    @media #{$screen-tablet} {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        border: none;
+        padding-right: rem(20px);
+        border-left: 1px solid #ebebf1;
+        height: rem(80px);
+    }
+
+    @media #{$screen-desktop} {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        border: none;
+        padding-right: rem(20px);
+        border-left: 1px solid #ebebf1;
+        height: rem(80px);
+    }
+
+    &-name {
+        font-size: $font-size-base-medium;
+        line-height: 120%;
+        color: $slate-gray;
+        text-transform: capitalize;
+        margin-left: rem(20px);
+        margin-right: rem(10px);
+        display: none;
+        overflow: hidden;
+        max-width: rem(80px);
+        font-family: $font-family-default;
+
+        @media #{$screen-tablet} {
+            display: block;
+        }
+
+        @media #{$screen-desktop} {
+            display: block;
+        }
+    }
+
+    &-photo {
+        visibility: hidden;
+        width: rem(40px);
+        height: rem(40px);
+        border-radius: 50%;
+
+        @media #{$screen-tablet} {
+            visibility: visible;
+        }
+
+        @media #{$screen-desktop} {
+            visibility: visible;
+        }
+    }
+}

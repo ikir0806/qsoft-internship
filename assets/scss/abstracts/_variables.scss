@@ -1,0 +1,102 @@
+/**
+* Colors
+*
+* Название переменной конкретного цвета генерируется через сервис: http://chir.ag/projects/name-that-color/.
+* Значение цвета всегда указывается в HEX-формате в нижнем регистре (кроме исключительных случаев).
+*/
+// Пример указания цветов
+$outer-space: #202f2f;
+$bunker: #121920;
+$mine-shaft: #3c3c3c;
+$tundora: #4b4b4b;
+$carnation: #f95a59;
+$alabster: #fafafa;
+$white: #ffffff;
+$athens-gray: #ebebf1;
+$slate-gray: #768298;
+$curious-blue: #34aadd;
+$tapestry: #a7507b;
+$wild-blue-yonder: #6680ae;
+$heather: #bbc4d6;
+$cerise-red: #dc2c53;
+$red: #ff3332;
+
+$color-text: $bunker;
+$color-text-h3: $mine-shaft;
+$block-color: $white;
+$background-color: $alabster;
+$gray-text: $slate-gray;
+$border-color: $athens-gray;
+$button-hover: $wild-blue-yonder;
+$disabled-bkg: $athens-gray;
+$disabled-color: $heather;
+
+/**
+* Fonts
+*/
+$font-size-base: 16px;
+$font-size-base-big: rem(16px);
+$font-size-base-medium: rem(14px);
+$font-size-base-small: rem(12px);
+$font-path: '../../public/fonts';
+$font-family-custom: 'Roboto-Regular';
+$font-family-default: 'Roboto-Medium';
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+
+$font-size-title-tiny: $font-size-base-big;
+$font-size-title-small: rem(18px);
+$font-size-title-medium: rem(20px);
+$font-size-title-big: rem(24px);
+$font-size-title-huge: rem(36px);
+
+/**
+* Breakpoints
+*/
+// Пример указания медиазапросов, затем можно использовать ее как '@media #{$screen-medium} {...}'
+$screen-tablet: '(min-width: 768px)';
+$screen-desktop: '(min-width: 1280px)';
+
+
+
+/**
+* Layout
+*/
+
+.flex {
+    display: flex;
+    row-gap: rem(30px);
+}
+
+.grid {
+    display: grid;
+    row-gap: rem(30px);
+}
+
+/**
+* Sizes
+*/
+
+
+
+/**
+* Transitions and Animations
+*/
+
+
+
+/**
+* Radius
+*/
+$border-radius: rem(5px);
+
+
+/**
+* Box-shadows
+*/
+$box-shadow: rem(0px) rem(3px) rem(10px) rgba(0, 0, 0, 0.05);
+
+
+/**
+* Z-indexes
+*/

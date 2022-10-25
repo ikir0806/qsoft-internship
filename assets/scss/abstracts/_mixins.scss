@@ -1,0 +1,82 @@
+@mixin object-fit($fit: fill, $position: null) {
+    -o-object-fit: $fit;
+    object-fit: $fit;
+
+    @if $position {
+        font-family: "object-fit: #{$fit}; object-position: #{$position}";
+
+        -o-object-position: $position;
+        object-position: $position;
+    }
+
+    @else {
+        font-family: "object-fit: #{$fit}";
+    }
+}
+
+@mixin title-big {
+    font-size: $font-size-title-big;
+    font-weight: $font-weight-medium, bold;
+    text-transform: uppercase;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-title-huge;
+    }
+
+    @media #{$screen-desktop} {
+        font-size: $font-size-title-huge;
+    }
+}
+
+@mixin title-medium {
+    font-size: $font-size-title-medium;
+    font-weight: $font-weight-medium;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-title-big;
+    }
+
+    @media #{$screen-desktop} {
+        font-size: $font-size-title-big;
+    }
+}
+
+@mixin title-small {
+    font-size: $font-size-title-tiny;
+    font-weight: $font-weight-medium;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-title-small;
+    }
+
+    @media #{$screen-desktop} {
+        font-size: $font-size-title-small;
+    }
+}
+
+@mixin text-medium {
+    font-size: $font-size-base-medium;
+    font-weight: $font-weight-regular;
+
+    @media #{$screen-tablet} {
+        font-size: $font-size-base-big;
+    }
+
+    @media #{$screen-desktop} {
+        font-size: $font-size-base-big;
+    }
+}
+
+@mixin cart-text {
+    font-size: $font-size-base-medium;
+    font-family: $font-family-custom;
+    font-weight: $font-weight-regular;
+    color: $slate-gray;
+}
+
+@mixin special-cart-text {
+    font-size: $font-size-base-medium;
+    font-family: $font-family-custom;
+    font-weight: $font-weight-regular;
+    color: $white;
+}

@@ -1,0 +1,40 @@
+.news {
+    width: 100%;
+    position: relative;
+    background-color: $white;
+    border-radius: rem(8px);
+    box-shadow: $box-shadow;
+    margin-bottom: rem(20px);
+
+    &-special {
+        height: rem(352px);
+        background-color: $bunker;
+
+        &+.news {
+            @media #{$screen-desktop} {
+                order: 1;
+            }
+        }
+    }
+
+    @media #{$screen-tablet} {
+        width: percentage(380/800);
+        /* height: rem(352px); */
+
+        &-special {
+            width: 100%;
+        }
+    }
+
+    @media #{$screen-desktop} {
+        width: percentage(392/1240);
+        margin-bottom: rem(31px);
+        /* height: rem(352px); */
+
+        &-special {
+            width: percentage(816/1240);
+            margin-bottom: rem(31px);
+            order: 1;
+        }
+    }
+}

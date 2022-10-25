@@ -1,0 +1,14 @@
+.cart-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+
+    @media #{$screen-tablet} {
+        justify-content: space-between;
+    }
+
+    @media #{$screen-desktop} {
+        justify-content: space-between;
+    }
+}

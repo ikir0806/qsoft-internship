@@ -1,0 +1,11 @@
+.specials-content {
+    @media #{$screen-tablet} {
+        position: relative;
+        width: percentage(54/100);
+    }
+
+    @media #{$screen-desktop} {
+        position: relative;
+        width: percentage(54/100);
+    }
+}

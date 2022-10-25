@@ -1,0 +1,36 @@
+.textarea {
+    resize: none;
+    color: $heather;
+    background: $athens-gray;
+    border-radius: $border-radius;
+    border: 1px solid $athens-gray;
+    font-size: $font-size-base-medium;
+    font-weight: $font-weight-regular;
+    font-family: $font-family-custom;
+    padding-top: rem(17px);
+    padding-left: rem(20px);
+    height: rem(100px);
+    width: 100%;
+    min-width: rem(315px);
+
+    &__wrp {
+        padding-right: rem(20px);
+        min-width: rem(315px);
+    }
+
+    &-white {
+        background: $white;
+    }
+
+    &__text {
+        color: $heather;
+        font-size: $font-size-base-small;
+        font-weight: $font-weight-regular;
+        font-family: $font-family-custom;
+        margin: 0;
+
+        &-white {
+            color: $bunker;
+        }
+    }
+}

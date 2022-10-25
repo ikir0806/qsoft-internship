@@ -1,0 +1,30 @@
+.menu-desktop {
+    display: none;
+    width: rem(286px);
+    background-color: $white;
+    margin: rem(50px) 0 0 rem(100px);
+    height: 300px;
+    padding: 0;
+
+    @media #{$screen-desktop} {
+        display: block;
+    }
+
+    &__item {
+        font-family: $font-family-custom;
+        font-size: $font-size-base-medium;
+        font-weight: $font-weight-regular;
+        color: $bunker;
+        height: rem(60px);
+        padding-left: rem(30px);
+        display: flex;
+
+        &:hover {
+            background-color: $athens-gray;
+        }
+
+        &-span {
+            margin: auto 0;
+        }
+    }
+}

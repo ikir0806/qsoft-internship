@@ -1,0 +1,76 @@
+/**
+* Vendors
+*/
+@import "~normalize.css";
+@import "~select2/dist/css/select2.min.css";
+/* @import "~select2.min.css";
+ */
+/**
+* Abstracts
+*/
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "slick-carousel/slick/slick-theme.scss";
+@import "slick-carousel/slick/slick.scss";
+/* @import "abstracts/slick";
+@import "abstracts/slick-theme"; */
+
+
+
+/**
+* Base
+*/
+@import "base/fonts";
+@import "base/generic";
+
+
+/*
+* Components
+*/
+//  Пример подключения стилей блоков
+// @import "components/my-block";
+@import "blocks/button";
+@import "blocks/footer";
+@import "blocks/header";
+@import "blocks/link";
+@import "blocks/links";
+@import "blocks/logo";
+@import "blocks/main";
+@import "blocks/notification-cart";
+@import "blocks/profile";
+@import "blocks/search-mobile";
+@import "blocks/search";
+@import "blocks/social-media";
+@import "blocks/unfilled-button";
+@import "blocks/qsoft";
+@import "blocks/mobile-profile";
+@import "blocks/tabs";
+@import "blocks/title";
+@import "blocks/news";
+@import "blocks/icon";
+@import "blocks/button-arrow";
+@import "blocks/specials";
+@import "blocks/cart-footer";
+@import "blocks/cart-text";
+@import "blocks/cart-links";
+@import "blocks/specials-content";
+@import "blocks/specials-img";
+@import "blocks/news-content";
+@import "blocks/news-img";
+@import "blocks/cart-star";
+@import "blocks/cart-list";
+@import "blocks/notifications";
+@import "blocks/form";
+@import "blocks/textarea";
+@import "blocks/checkbox";
+@import "blocks/radio";
+@import "blocks/select";
+@import "blocks/error";
+@import "blocks/menu";
+@import "blocks/slider";
+@import "blocks/article";
+@import "blocks/breadspreads";
+@import "blocks/edit-field";
+@import "blocks/button-profile";
+@import "blocks/menu-desktop";

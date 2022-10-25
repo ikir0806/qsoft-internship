@@ -1,0 +1,27 @@
+.qsoft {
+    width: rem(135px);
+    height: rem(26px);
+    padding-bottom: rem(20px);
+    padding-right: 0;
+    color: $heather;
+    display: flex;
+    
+
+    @media #{$screen-tablet} {
+        padding-right: rem(20px);
+        padding-bottom: 0;
+    }
+
+    @media #{$screen-desktop} {
+        padding-right: rem(20px);
+        padding-bottom: 0;
+    }
+
+    &__svg {
+        margin: 0 auto;
+    }
+}
+
+.qsoft:hover {
+    color: $slate-gray;
+}

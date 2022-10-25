@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUI</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" /> -->
+</head>
+
+<body>
+    <button class="button">Button</button>
+    <br />
+    <button class="unfilled-button">Кнопка</button>
+    <br />
+    <a class="link" href="#">Ссылка</a>
+    <br />
+    <svg class="icon icon--instagram">
+        <use xlink:href="./assets/icons/svg/instagram.svg#instagram"></use>
+    </svg>
+    <br />
+    <svg class="icon icon--qsoft">
+        <use class="qsoft__svg" xlink:href="./assets/icons/svg/qsoft.svg#qsoft"></use>
+    </svg>
+    <br />
+    <a class="logo" href="#">
+        <img class="logo-img" src="./assets/images/logo.png" alt="logo">
+    </a>
+    <br />
+    <form id="validate" class="form" action="#">
+        <label class="form__label">
+            <span class="form__text">Обязательный инпут<span class="form__star">*</span></span>
+            <input class="form__input" type="text" placeholder="Плейсхолдер.." required>
+        </label>
+    </form>
+    <br />
+    <form class="form" action="#">
+        <label class="form__label">
+            <span class="form__text form__text-disabled">Неактивный инпут<span
+                    class="form__star form__star-disabled">*</span></span>
+            <input class="form__input" type="text" placeholder="Плейсхолдер.." required disabled="disabled">
+        </label>
+    </form>
+    <br />
+    <br />
+    <div class="textarea__wrp">
+        <p class="textarea__text">Укажите причину ненависти</p>
+        <textarea class="textarea">Причина</textarea>
+    </div>
+    <br />
+    <div class="checkbox">
+        <label class="checkbox__label">
+            <input class="checkbox__input" type="checkbox" disabled="disabled" checked="checked">
+            <span class="checkbox__span">Чекбокс</span>
+        </label>
+    </div>
+
+    <div class="checkbox">
+        <label class="checkbox__label">
+            <input class="checkbox__input" type="checkbox" disabled="disabled">
+            <span class="checkbox__span">Чекбокс</span>
+        </label>
+    </div>
+
+    <div class="checkbox">
+        <label class="checkbox__label">
+            <input class="checkbox__input" type="checkbox" checked="checked">
+            <span class="checkbox__span">Чекбокс</span>
+        </label>
+    </div>
+
+    <div class="checkbox">
+        <label class="checkbox__label">
+            <input class="checkbox__input" type="checkbox">
+            <span class="checkbox__span">Чекбокс</span>
+        </label>
+    </div>
+    <br />
+    <div class="radio">
+        <label class="radio__label">
+            <input class="radio__input" type="radio" name="type" checked="checked" disabled="disabled">
+            <span class="radio__span">Радио</span>
+        </label>
+    </div>
+
+    <div class="radio">
+        <label class="radio__label">
+            <input class="radio__input" type="radio" name="type" disabled="disabled">
+            <span class="radio__span">Радио</span>
+        </label>
+    </div>
+
+    <div class="radio">
+        <label class="radio__label">
+            <input class="radio__input" type="radio" name="type">
+            <span class="radio__span">Радио</span>
+        </label>
+    </div>
+
+    <div class="radio">
+        <label class="radio__label">
+            <input class="radio__input" type="radio" name="type">
+            <span class="radio__span">Радио</span>
+        </label>
+    </div>
+    <br />
+    <div class="select__wrp">
+        <select class="js-example-basic-single select" name="gui-select" id="select">
+            <option value="">Выбранный пункт</option>
+            <option value="">Другой пункт</option>
+            <option value="">Третий</option>
+            <option value="">Четвертый</option>
+            <option value="">Пятый</option>
+        </select>
+        <svg class="icon icon--arrow-select">
+            <use xlink:href="./assets/icons/svg/arrow-select.svg#arrow-select"></use>
+        </svg>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>a</p>
+    <script src="./public/js/script.js"></script>
+</body>
+
+</html>

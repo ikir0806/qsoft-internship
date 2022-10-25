@@ -1,0 +1,20 @@
+.button {
+    color: $white;
+    border-radius: $border-radius;
+    background-color: $curious-blue;
+    border: none;
+
+    &:hover {
+        background-color: $button-hover;
+    }
+
+    &:active {
+        background-color: $button-hover;
+        opacity: 0.5;
+    }
+
+    &:disabled {
+        background-color: $disabled-bkg;
+        color: $disabled-color;
+    }
+}

@@ -1,0 +1,26 @@
+.button-profile {
+    display: flex;
+    align-items: center;
+    margin: rem(50px) 0 rem(50px) 0;
+    column-gap: rem(30px);
+
+    &__unfilled {
+        margin-left: auto;
+        font-size: $font-size-base-medium;
+        font-weight: $font-weight-regular;
+        font-family: $font-family-custom;
+    }
+
+    &__submit {
+        max-width: 100%;
+        font-size: $font-size-base-medium;
+        font-weight: $font-weight-regular;
+        font-family: $font-family-custom;
+        height: rem(50px);
+
+        &-span {
+            display: block;
+            padding: 0 rem(30px);
+        }
+    }
+}

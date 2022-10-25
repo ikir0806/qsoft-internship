@@ -1,0 +1,19 @@
+.cart-star {
+    width: rem(35px);
+    height: rem(35px);
+    background-color: $white;
+    display: flex;
+    position: absolute;
+    right: 0;
+    border-radius: 0 rem(8px) 0 rem(8px);
+    top: 0;
+
+    &-left {
+        top: auto;
+    }
+
+    &-special {
+        background-color: transparent;
+        z-index: 1;
+    }
+}
