@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная страница</title>
-    <link rel="stylesheet" href="./public/css/style.css">
-</head>
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header__wrp container">
-            <a class="logo" href="#">
-                <img class="logo-img" src="./assets/images/logo.png" alt="logo">
-            </a>
-            <a class="mobile-profile" href="./profile.html">
-                <img class="mobile-profile__img" src="./assets/images/profile-mobile.png" alt="profile-photo">
-            </a>
-            <form class="search" action="#">
-                <label class="search-label visually-hidden" for="search"></label>
-                <button type="submit" class="search-form__icon">
-                    <svg class="icon icon--loupe search-form__icon__image">
-                        <use xlink:href="./assets/icons/svg/loupe.svg#loupe"></use>
-                    </svg>
-                </button>
-                <input class="search-input" type="search" placeholder="Найти..." id="search">
-            </form>
-            <a class="profile" href="./profile.html">
-                <p class="profile-name">константин</p>
-                <img class="profile-photo" src="./assets/images/profile-photo.png" alt="profile-photo">
-            </a>
-        </div>
+      <div class="header__wrp container">
+        <a class="logo" href="#">
+          <img class="logo-img" src="./assets/images/logo.png" alt="logo" />
+        </a>
+        <a class="mobile-profile" href="./profile.html">
+          <img
+            class="mobile-profile__img"
+            src="./assets/images/profile-mobile.png"
+            alt="profile-photo"
+          />
+        </a>
+        <form class="search" action="#">
+          <label class="search-label visually-hidden" for="search"></label>
+          <button type="submit" class="search-form__icon">
+            <svg class="icon icon--loupe search-form__icon__image">
+              <use xlink:href="./assets/icons/svg/loupe.svg#loupe"></use>
+            </svg>
+          </button>
+          <input
+            class="search-input"
+            type="search"
+            placeholder="Найти..."
+            id="search"
+          />
+        </form>
+        <a class="profile" href="./profile.html">
+          <p class="profile-name">константин</p>
+          <img
+            class="profile-photo"
+            src="./assets/images/profile-photo.png"
+            alt="profile-photo"
+          />
+        </a>
+      </div>
     </header>
     <main class="main">
-        <div class="slider single-item notifications">
+      <!-- <div class="slider single-item notifications">
             <div class="notifications__cart">
                 <svg class="icon icon--exclamation">
                     <use xlink:href="./assets/icons/svg/exclamation.svg#exclamation"></use>
@@ -98,406 +110,642 @@
                             опрос</span></button>
                 </div>
             </div>
-        </div>
-        <article class="article">
-            <h1 class="title">qsoft</h1>
-            <h2 class="title__subtitle">Ведущий web-интегратор</h2>
-            <p class="title__text">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у
-                себя в постели
-                превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову,
-                свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось
-                готовое вот-вот окончательно сползти одеяло.</p>
-            <section>
-                <ul class="tabs" role="tablist" aria-label="О компании">
-                    <li class="tabs__item" role="presentation">
-                        <button id="news-tab" class="tabs__tab" role="tab" aria-selected="true"
-                            aria-controls="news-tab-panel">
-                            Новости
-                        </button>
-                    </li>
-                    <li class="tabs__item" role="presentation">
-                        <button id="specials-tab" class="tabs__tab" role="tab" aria-selected="false"
-                            aria-controls="specials-tab-panel">
-                            Акции
-                        </button>
-                    </li>
-                </ul>
-                <section id="news-tab-panel" role="tabpanel" aria-labelledby="news-tab">
-                    <ul class="cart-list">
-                        <li class="news">
-                            <div class="cart-star">
-                                <svg class="icon icon--star">
-                                    <use xlink:href="./assets/icons/svg/star.svg#star"></use>
-                                </svg>
-                            </div>
-                            <img class="news-img" src="./assets/images/cart-img.png" alt="news-img">
-                            <div class="news-content">
-                                <h3 id="dotdotdot" data-height=70 class="dotdotdot cart-text__title">В заголовке не должно быть
-                                    больше двух
-                                    строк.
-                                    Если больше,
-                                    текст
-                                    обрезается. В заголовке не должно быть больше двух строк. Если больше, текст
-                                    обрезается.</h3>
-                                <p id="dotdotdot" data-height=62 class="dotdotdot cart-text__text">
-                                    В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после
-                                    беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в
-                                    страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять
-                                    голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на
-                                    верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
-                                </p>
-                                <div class="cart-footer">
-                                    <p class="cart-footer__date">04.02.2020</p>
-                                    <ul class="cart-footer__stats">
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--like">
-                                                <use xlink:href="./assets/icons/svg/like.svg#like"></use>
-                                            </svg><span>123</span></li>
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--comment">
-                                                <use xlink:href="./assets/icons/svg/comment.svg#comment"></use>
-                                            </svg><span>76</span></li>
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--view">
-                                                <use xlink:href="./assets/icons/svg/view.svg#view"></use>
-                                            </svg><span>34</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="news">
-                            <div class="cart-star">
-                                <svg class="icon icon--star">
-                                    <use xlink:href="./assets/icons/svg/star.svg#star"></use>
-                                </svg>
-                            </div>
-                            <img class="news-img" src="./assets/images/cart-img.png" alt="news-img">
-                            <div class="news-content">
-                                <h3 id="dotdotdot" data-height=70 class="dotdotdot cart-text__title">В заголовке не должно быть
-                                    больше двух
-                                    строк.
-                                    Если больше,
-                                    текст
-                                    обрезается. В заголовке не должно быть больше двух строк. Если больше, текст
-                                    обрезается.</h3>
-                                <p id="dotdotdot" data-height=62 class="dotdotdot cart-text__text">
-                                    В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после
-                                    беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в
-                                    страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять
-                                    голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на
-                                    верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
-                                </p>
-                                <div class="cart-footer">
-                                    <p class="cart-footer__date">04.02.2020</p>
-                                    <ul class="cart-footer__stats">
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--like">
-                                                <use xlink:href="./assets/icons/svg/like.svg#like"></use>
-                                            </svg><span>123</span></li>
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--comment">
-                                                <use xlink:href="./assets/icons/svg/comment.svg#comment"></use>
-                                            </svg><span>76</span></li>
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--view">
-                                                <use xlink:href="./assets/icons/svg/view.svg#view"></use>
-                                            </svg><span>34</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="news news-special">
-                            <div class="cart-star cart-star-special">
-                                <svg class="icon icon--star">
-                                    <use xlink:href="./assets/icons/svg/star.svg#star"></use>
-                                </svg>
-                            </div>
-                            <img class="news-img news-img-special" src="./assets/images/special-cart-img.png"
-                                alt="special-news-img">
-                            <div class="news-content news-content-special">
-                                <h3 id="dotdotdot" data-height=70 class="dotdotdot cart-text__title cart-text__title-special">В
-                                    заголовке не
-                                    должно
-                                    быть больше
-                                    двух
-                                    строк. Если
-                                    больше, текст
-                                    обрезается. В заголовке не должно быть больше двух строк. Если больше, текст
-                                    обрезается.</h3>
-                                <p id="dotdotdot" data-height=62 class="dotdotdot cart-text__text cart-text__text-special">
-                                    В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после
-                                    беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в
-                                    страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять
-                                    голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на
-                                    верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
-                                </p>
-                                <div class="cart-footer">
-                                    <p class="cart-footer__date cart-footer__date-special">04.02.2020</p>
-                                    <ul class="cart-footer__stats">
-                                        <li class="cart-footer__stats-item cart-footer__stats-item-special"><svg
-                                                class="icon icon--like">
-                                                <use xlink:href="./assets/icons/svg/like.svg#like"></use>
-                                            </svg><span>123</span></li>
-                                        <li class="cart-footer__stats-item cart-footer__stats-item-special"><svg
-                                                class="icon icon--comment">
-                                                <use xlink:href="./assets/icons/svg/comment.svg#comment"></use>
-                                            </svg><span>76</span></li>
-                                        <li class="cart-footer__stats-item cart-footer__stats-item-special"><svg
-                                                class="icon icon--view">
-                                                <use xlink:href="./assets/icons/svg/view.svg#view"></use>
-                                            </svg><span>34</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="news">
-                            <div class="cart-star">
-                                <svg class="icon icon--star">
-                                    <use xlink:href="./assets/icons/svg/star.svg#star"></use>
-                                </svg>
-                            </div>
-                            <img class="news-img" src="./assets/images/cart-img.png" alt="news-img">
-                            <div class="news-content">
-                                <h3 id="dotdotdot" data-height=70 class="dotdotdot cart-text__title">В заголовке не должно быть
-                                    больше двух
-                                    строк.
-                                    Если больше,
-                                    текст
-                                    обрезается. В заголовке не должно быть больше двух строк. Если больше, текст
-                                    обрезается.</h3>
-                                <p id="dotdotdot" data-height=62 class="dotdotdot cart-text__text">
-                                    В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после
-                                    беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в
-                                    страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять
-                                    голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на
-                                    верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
-                                </p>
-                                <div class="cart-footer">
-                                    <p class="cart-footer__date">04.02.2020</p>
-                                    <ul class="cart-footer__stats">
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--like">
-                                                <use xlink:href="./assets/icons/svg/like.svg#like"></use>
-                                            </svg><span>123</span></li>
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--comment">
-                                                <use xlink:href="./assets/icons/svg/comment.svg#comment"></use>
-                                            </svg><span>76</span></li>
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--view">
-                                                <use xlink:href="./assets/icons/svg/view.svg#view"></use>
-                                            </svg><span>34</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="news">
-                            <div class="cart-star">
-                                <svg class="icon icon--star">
-                                    <use xlink:href="./assets/icons/svg/star.svg#star"></use>
-                                </svg>
-                            </div>
-                            <img class="news-img" src="./assets/images/cart-img.png" alt="news-img">
-                            <div class="news-content">
-                                <h3 id="dotdotdot" data-height=70 class="dotdotdot cart-text__title">В заголовке не должно быть
-                                    больше двух
-                                    строк.
-                                    Если больше,
-                                    текст
-                                    обрезается. В заголовке не должно быть больше двух строк. Если больше, текст
-                                    обрезается.</h3>
-                                <p id="dotdotdot" data-height=62 class="dotdotdot cart-text__text">
-                                    В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после
-                                    беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в
-                                    страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять
-                                    голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на
-                                    верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
-                                </p>
-                                <div class="cart-footer">
-                                    <p class="cart-footer__date">04.02.2020</p>
-                                    <ul class="cart-footer__stats">
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--like">
-                                                <use xlink:href="./assets/icons/svg/like.svg#like"></use>
-                                            </svg><span>123</span></li>
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--comment">
-                                                <use xlink:href="./assets/icons/svg/comment.svg#comment"></use>
-                                            </svg><span>76</span></li>
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--view">
-                                                <use xlink:href="./assets/icons/svg/view.svg#view"></use>
-                                            </svg><span>34</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
+        </div> -->
+      <article class="article">
+        <h1 class="title">qsoft</h1>
+        <h2 class="title__subtitle">Ведущий web-интегратор</h2>
+        <p class="title__text">
+          Проснувшись однажды утром после беспокойного сна, Грегор Замза
+          обнаружил, что он у себя в постели превратился в страшное насекомое.
+          Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову,
+          свой коричневый, выпуклый, разделенный дугообразными чешуйками живот,
+          на верхушке которого еле держалось готовое вот-вот окончательно
+          сползти одеяло.
+        </p>
+        <section>
+          <ul class="tabs" role="tablist" aria-label="О компании">
+            <li class="tabs__item" role="presentation">
+              <button
+                id="news-tab"
+                class="tabs__tab"
+                role="tab"
+                aria-selected="true"
+                aria-controls="news-tab-panel"
+              >
+                Новости
+              </button>
+            </li>
+            <li class="tabs__item" role="presentation">
+              <button
+                id="specials-tab"
+                class="tabs__tab"
+                role="tab"
+                aria-selected="false"
+                aria-controls="specials-tab-panel"
+              >
+                Акции
+              </button>
+            </li>
+          </ul>
+          <section
+            id="news-tab-panel"
+            role="tabpanel"
+            aria-labelledby="news-tab"
+          >
+            <ul class="cart-list">
+              <li class="news">
+                <div class="cart-star">
+                  <svg class="icon icon--star">
+                    <use xlink:href="./assets/icons/svg/star.svg#star"></use>
+                  </svg>
+                </div>
+                <img
+                  class="news-img"
+                  src="./assets/images/cart-img.png"
+                  alt="news-img"
+                />
+                <div class="news-content">
+                  <h3
+                    id="dotdotdot"
+                    data-height="70"
+                    class="dotdotdot cart-text__title"
+                  >
+                    В заголовке не должно быть больше двух строк. Если больше,
+                    текст обрезается. В заголовке не должно быть больше двух
+                    строк. Если больше, текст обрезается.
+                  </h3>
+                  <p
+                    id="dotdotdot"
+                    data-height="62"
+                    class="dotdotdot cart-text__text"
+                  >
+                    В лиде новости не может быть больше 5 строк. Проснувшись
+                    однажды утром после беспокойного сна, Грегор Замза
+                    обнаружил, что он у себя в постели превратился в страшное
+                    насекомое. Лежа на панцирнотвердой спине, он видел, стоило
+                    ему приподнять голову, свой коричневый, выпуклый,
+                    разделенный дугообразными чешуйками живот, на верхушке
+                    которого еле держалось готовое вот-вот окончательно сползти
+                    одеяло.
+                  </p>
+                  <div class="cart-footer">
+                    <p class="cart-footer__date">04.02.2020</p>
+                    <ul class="cart-footer__stats">
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--like">
+                          <use
+                            xlink:href="./assets/icons/svg/like.svg#like"
+                          ></use></svg
+                        ><span>123</span>
+                      </li>
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--comment">
+                          <use
+                            xlink:href="./assets/icons/svg/comment.svg#comment"
+                          ></use></svg
+                        ><span>76</span>
+                      </li>
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--view">
+                          <use
+                            xlink:href="./assets/icons/svg/view.svg#view"
+                          ></use></svg
+                        ><span>34</span>
+                      </li>
                     </ul>
-                </section>
-                <section id="specials-tab-panel" role="tabpanel" aria-labelledby="specials-tab" hidden>
-                    <ul class="cart-list">
-                        <li class="specials">
-                            <img class="specials-img" src="./assets/images/cart-img.png" alt="specials-img">
-                            <div class="specials-content">
-                                <div class="cart-star">
-                                    <svg class="icon icon--star">
-                                        <use xlink:href="./assets/icons/svg/star.svg#star"></use>
-                                    </svg>
-                                </div>
-                                <ul class="cart-links">
-                                    <li class="link cart-links-left">Йога</li>
-                                    <li class="link cart-links-right">Студия Йогаджой</li>
-                                </ul>
-                                <h3 id="dotdotdot" data-height=70 class="dotdotdot cart-text__title">В заголовке не должно быть
-                                    больше двух
-                                    строк. Если
-                                    больше, текст
-                                    обрезается. В заголовке не должно быть больше двух строк. Если больше, текст
-                                    обрезается.</h3>
-                                <p id="dotdotdot" data-height=62 class="dotdotdot cart-text__text">
-                                    В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после
-                                    беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в
-                                    страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять
-                                    голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на
-                                    верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
-                                </p>
-                                <div class="cart-footer">
-                                    <div class="cart-footer__info">
-                                        <p class="cart-footer__date">04.02.2020</p>
-                                        <p class="cart-footer__status">Предложение активно</p>
-                                    </div>
-                                    <ul class="cart-footer__stats">
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--like">
-                                                <use xlink:href="./assets/icons/svg/like.svg#like"></use>
-                                            </svg><span>123</span></li>
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--comment">
-                                                <use xlink:href="./assets/icons/svg/comment.svg#comment"></use>
-                                            </svg><span>76</span></li>
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--view">
-                                                <use xlink:href="./assets/icons/svg/view.svg#view"></use>
-                                            </svg><span>34</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="specials specials-left">
-                            <div class="cart-star cart-star-left">
-                                <svg class="icon icon--star">
-                                    <use xlink:href="./assets/icons/svg/star.svg#star"></use>
-                                </svg>
-                            </div>
-                            <img class="specials-img specials-img-left" src="./assets/images/cart-img.png"
-                                alt="news-img">
-                            <div class="specials-content">
-                                <ul class="cart-links">
-                                    <li class="link cart-links-left">Транспорт</li>
-                                    <li class="link cart-links-right">Такси Арама</li>
-                                </ul>
-                                <h3 id="dotdotdot" data-height=70 class="dotdotdot cart-text__title">В заголовке не должно быть
-                                    больше двух
-                                    строк. Если
-                                    больше, текст
-                                    обрезается. В заголовке не должно быть больше двух строк. Если больше, текст
-                                    обрезается.</h3>
-                                <p id="dotdotdot" data-height=62 class="dotdotdot cart-text__text">
-                                    В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после
-                                    беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в
-                                    страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять
-                                    голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на
-                                    верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
-                                </p>
-                                <div class="cart-footer">
-                                    <div class="cart-footer__info">
-                                        <p class="cart-footer__date">04.02.2020</p>
-                                        <p class="cart-footer__status">Завершено</p>
-                                    </div>
-                                    <ul class="cart-footer__stats">
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--like">
-                                                <use xlink:href="./assets/icons/svg/like.svg#like"></use>
-                                            </svg><span>123</span></li>
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--comment">
-                                                <use xlink:href="./assets/icons/svg/comment.svg#comment"></use>
-                                            </svg><span>76</span></li>
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--view">
-                                                <use xlink:href="./assets/icons/svg/view.svg#view"></use>
-                                            </svg><span>34</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="specials">
-                            <img class="specials-img" src="./assets/images/cart-img.png" alt="news-img">
-                            <div class="specials-content">
-                                <div class="cart-star">
-                                    <svg class="icon icon--star">
-                                        <use xlink:href="./assets/icons/svg/star.svg#star"></use>
-                                    </svg>
-                                </div>
-                                <ul class="cart-links">
-                                    <li class="link cart-links-left">Экскурсии</li>
-                                    <li class="link cart-links-right">ОАО «Спутник Москвича»</li>
-                                </ul>
-                                <h3 id="dotdotdot" data-height=70 class="dotdotdot cart-text__title">В заголовке не должно быть
-                                    больше двух
-                                    строк. Если
-                                    больше, текст
-                                    обрезается. В заголовке не должно быть больше двух строк. Если больше, текст
-                                    обрезается.</h3>
-                                <p id="dotdotdot" data-height=62 class="dotdotdot cart-text__text">
-                                    В лиде новости не может быть больше 5 строк. Проснувшись однажды утром после
-                                    беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в
-                                    страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять
-                                    голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на
-                                    верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
-                                </p>
-                                <div class="cart-footer">
-                                    <div class="cart-footer__info">
-                                        <p class="cart-footer__date">04.02.2020</p>
-                                        <p class="cart-footer__status">Предложение активно</p>
-                                    </div>
-                                    <ul class="cart-footer__stats">
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--like">
-                                                <use xlink:href="./assets/icons/svg/like.svg#like"></use>
-                                            </svg><span>123</span></li>
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--comment">
-                                                <use xlink:href="./assets/icons/svg/comment.svg#comment"></use>
-                                            </svg><span>76</span></li>
-                                        <li class="cart-footer__stats-item"><svg class="icon icon--view">
-                                                <use xlink:href="./assets/icons/svg/view.svg#view"></use>
-                                            </svg><span>34</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
+                  </div>
+                </div>
+              </li>
+              <li class="news">
+                <div class="cart-star">
+                  <svg class="icon icon--star">
+                    <use xlink:href="./assets/icons/svg/star.svg#star"></use>
+                  </svg>
+                </div>
+                <img
+                  class="news-img"
+                  src="./assets/images/cart-img.png"
+                  alt="news-img"
+                />
+                <div class="news-content">
+                  <h3
+                    id="dotdotdot"
+                    data-height="70"
+                    class="dotdotdot cart-text__title"
+                  >
+                    В заголовке не должно быть больше двух строк. Если больше,
+                    текст обрезается. В заголовке не должно быть больше двух
+                    строк. Если больше, текст обрезается.
+                  </h3>
+                  <p
+                    id="dotdotdot"
+                    data-height="62"
+                    class="dotdotdot cart-text__text"
+                  >
+                    В лиде новости не может быть больше 5 строк. Проснувшись
+                    однажды утром после беспокойного сна, Грегор Замза
+                    обнаружил, что он у себя в постели превратился в страшное
+                    насекомое. Лежа на панцирнотвердой спине, он видел, стоило
+                    ему приподнять голову, свой коричневый, выпуклый,
+                    разделенный дугообразными чешуйками живот, на верхушке
+                    которого еле держалось готовое вот-вот окончательно сползти
+                    одеяло.
+                  </p>
+                  <div class="cart-footer">
+                    <p class="cart-footer__date">04.02.2020</p>
+                    <ul class="cart-footer__stats">
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--like">
+                          <use
+                            xlink:href="./assets/icons/svg/like.svg#like"
+                          ></use></svg
+                        ><span>123</span>
+                      </li>
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--comment">
+                          <use
+                            xlink:href="./assets/icons/svg/comment.svg#comment"
+                          ></use></svg
+                        ><span>76</span>
+                      </li>
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--view">
+                          <use
+                            xlink:href="./assets/icons/svg/view.svg#view"
+                          ></use></svg
+                        ><span>34</span>
+                      </li>
                     </ul>
-                </section>
-            </section>
-            <button class="button button-arrow">
-                <span class="button-arrow__span">Смотреть еще</span>
-                <svg class="icon icon--arrow">
-                    <use xlink:href="./assets/icons/svg/arrow.svg#arrow"></use>
-                </svg>
-            </button>
-        </article>
-        <aside></aside>
+                  </div>
+                </div>
+              </li>
+              <li class="news news-special">
+                <div class="cart-star cart-star-special">
+                  <svg class="icon icon--star">
+                    <use xlink:href="./assets/icons/svg/star.svg#star"></use>
+                  </svg>
+                </div>
+                <img
+                  class="news-img news-img-special"
+                  src="./assets/images/special-cart-img.png"
+                  alt="special-news-img"
+                />
+                <div class="news-content news-content-special">
+                  <h3
+                    id="dotdotdot"
+                    data-height="70"
+                    class="dotdotdot cart-text__title cart-text__title-special"
+                  >
+                    В заголовке не должно быть больше двух строк. Если больше,
+                    текст обрезается. В заголовке не должно быть больше двух
+                    строк. Если больше, текст обрезается.
+                  </h3>
+                  <p
+                    id="dotdotdot"
+                    data-height="62"
+                    class="dotdotdot cart-text__text cart-text__text-special"
+                  >
+                    В лиде новости не может быть больше 5 строк. Проснувшись
+                    однажды утром после беспокойного сна, Грегор Замза
+                    обнаружил, что он у себя в постели превратился в страшное
+                    насекомое. Лежа на панцирнотвердой спине, он видел, стоило
+                    ему приподнять голову, свой коричневый, выпуклый,
+                    разделенный дугообразными чешуйками живот, на верхушке
+                    которого еле держалось готовое вот-вот окончательно сползти
+                    одеяло.
+                  </p>
+                  <div class="cart-footer">
+                    <p class="cart-footer__date cart-footer__date-special">
+                      04.02.2020
+                    </p>
+                    <ul class="cart-footer__stats">
+                      <li
+                        class="cart-footer__stats-item cart-footer__stats-item-special"
+                      >
+                        <svg class="icon icon--like">
+                          <use
+                            xlink:href="./assets/icons/svg/like.svg#like"
+                          ></use></svg
+                        ><span>123</span>
+                      </li>
+                      <li
+                        class="cart-footer__stats-item cart-footer__stats-item-special"
+                      >
+                        <svg class="icon icon--comment">
+                          <use
+                            xlink:href="./assets/icons/svg/comment.svg#comment"
+                          ></use></svg
+                        ><span>76</span>
+                      </li>
+                      <li
+                        class="cart-footer__stats-item cart-footer__stats-item-special"
+                      >
+                        <svg class="icon icon--view">
+                          <use
+                            xlink:href="./assets/icons/svg/view.svg#view"
+                          ></use></svg
+                        ><span>34</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="news">
+                <div class="cart-star">
+                  <svg class="icon icon--star">
+                    <use xlink:href="./assets/icons/svg/star.svg#star"></use>
+                  </svg>
+                </div>
+                <img
+                  class="news-img"
+                  src="./assets/images/cart-img.png"
+                  alt="news-img"
+                />
+                <div class="news-content">
+                  <h3
+                    id="dotdotdot"
+                    data-height="70"
+                    class="dotdotdot cart-text__title"
+                  >
+                    В заголовке не должно быть больше двух строк. Если больше,
+                    текст обрезается. В заголовке не должно быть больше двух
+                    строк. Если больше, текст обрезается.
+                  </h3>
+                  <p
+                    id="dotdotdot"
+                    data-height="62"
+                    class="dotdotdot cart-text__text"
+                  >
+                    В лиде новости не может быть больше 5 строк. Проснувшись
+                    однажды утром после беспокойного сна, Грегор Замза
+                    обнаружил, что он у себя в постели превратился в страшное
+                    насекомое. Лежа на панцирнотвердой спине, он видел, стоило
+                    ему приподнять голову, свой коричневый, выпуклый,
+                    разделенный дугообразными чешуйками живот, на верхушке
+                    которого еле держалось готовое вот-вот окончательно сползти
+                    одеяло.
+                  </p>
+                  <div class="cart-footer">
+                    <p class="cart-footer__date">04.02.2020</p>
+                    <ul class="cart-footer__stats">
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--like">
+                          <use
+                            xlink:href="./assets/icons/svg/like.svg#like"
+                          ></use></svg
+                        ><span>123</span>
+                      </li>
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--comment">
+                          <use
+                            xlink:href="./assets/icons/svg/comment.svg#comment"
+                          ></use></svg
+                        ><span>76</span>
+                      </li>
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--view">
+                          <use
+                            xlink:href="./assets/icons/svg/view.svg#view"
+                          ></use></svg
+                        ><span>34</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="news">
+                <div class="cart-star">
+                  <svg class="icon icon--star">
+                    <use xlink:href="./assets/icons/svg/star.svg#star"></use>
+                  </svg>
+                </div>
+                <img
+                  class="news-img"
+                  src="./assets/images/cart-img.png"
+                  alt="news-img"
+                />
+                <div class="news-content">
+                  <h3
+                    id="dotdotdot"
+                    data-height="70"
+                    class="dotdotdot cart-text__title"
+                  >
+                    В заголовке не должно быть больше двух строк. Если больше,
+                    текст обрезается. В заголовке не должно быть больше двух
+                    строк. Если больше, текст обрезается.
+                  </h3>
+                  <p
+                    id="dotdotdot"
+                    data-height="62"
+                    class="dotdotdot cart-text__text"
+                  >
+                    В лиде новости не может быть больше 5 строк. Проснувшись
+                    однажды утром после беспокойного сна, Грегор Замза
+                    обнаружил, что он у себя в постели превратился в страшное
+                    насекомое. Лежа на панцирнотвердой спине, он видел, стоило
+                    ему приподнять голову, свой коричневый, выпуклый,
+                    разделенный дугообразными чешуйками живот, на верхушке
+                    которого еле держалось готовое вот-вот окончательно сползти
+                    одеяло.
+                  </p>
+                  <div class="cart-footer">
+                    <p class="cart-footer__date">04.02.2020</p>
+                    <ul class="cart-footer__stats">
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--like">
+                          <use
+                            xlink:href="./assets/icons/svg/like.svg#like"
+                          ></use></svg
+                        ><span>123</span>
+                      </li>
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--comment">
+                          <use
+                            xlink:href="./assets/icons/svg/comment.svg#comment"
+                          ></use></svg
+                        ><span>76</span>
+                      </li>
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--view">
+                          <use
+                            xlink:href="./assets/icons/svg/view.svg#view"
+                          ></use></svg
+                        ><span>34</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section
+            id="specials-tab-panel"
+            role="tabpanel"
+            aria-labelledby="specials-tab"
+            hidden
+          >
+            <ul class="cart-list">
+              <li class="specials">
+                <img
+                  class="specials-img"
+                  src="./assets/images/cart-img.png"
+                  alt="specials-img"
+                />
+                <div class="specials-content">
+                  <div class="cart-star">
+                    <svg class="icon icon--star">
+                      <use xlink:href="./assets/icons/svg/star.svg#star"></use>
+                    </svg>
+                  </div>
+                  <ul class="cart-links">
+                    <li class="link cart-links-left">Йога</li>
+                    <li class="link cart-links-right">Студия Йогаджой</li>
+                  </ul>
+                  <h3
+                    id="dotdotdot"
+                    data-height="70"
+                    class="dotdotdot cart-text__title"
+                  >
+                    В заголовке не должно быть больше двух строк. Если больше,
+                    текст обрезается. В заголовке не должно быть больше двух
+                    строк. Если больше, текст обрезается.
+                  </h3>
+                  <p
+                    id="dotdotdot"
+                    data-height="62"
+                    class="dotdotdot cart-text__text"
+                  >
+                    В лиде новости не может быть больше 5 строк. Проснувшись
+                    однажды утром после беспокойного сна, Грегор Замза
+                    обнаружил, что он у себя в постели превратился в страшное
+                    насекомое. Лежа на панцирнотвердой спине, он видел, стоило
+                    ему приподнять голову, свой коричневый, выпуклый,
+                    разделенный дугообразными чешуйками живот, на верхушке
+                    которого еле держалось готовое вот-вот окончательно сползти
+                    одеяло.
+                  </p>
+                  <div class="cart-footer">
+                    <div class="cart-footer__info">
+                      <p class="cart-footer__date">04.02.2020</p>
+                      <p class="cart-footer__status">Предложение активно</p>
+                    </div>
+                    <ul class="cart-footer__stats">
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--like">
+                          <use
+                            xlink:href="./assets/icons/svg/like.svg#like"
+                          ></use></svg
+                        ><span>123</span>
+                      </li>
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--comment">
+                          <use
+                            xlink:href="./assets/icons/svg/comment.svg#comment"
+                          ></use></svg
+                        ><span>76</span>
+                      </li>
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--view">
+                          <use
+                            xlink:href="./assets/icons/svg/view.svg#view"
+                          ></use></svg
+                        ><span>34</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="specials specials-left">
+                <div class="cart-star cart-star-left">
+                  <svg class="icon icon--star">
+                    <use xlink:href="./assets/icons/svg/star.svg#star"></use>
+                  </svg>
+                </div>
+                <img
+                  class="specials-img specials-img-left"
+                  src="./assets/images/cart-img.png"
+                  alt="news-img"
+                />
+                <div class="specials-content">
+                  <ul class="cart-links">
+                    <li class="link cart-links-left">Транспорт</li>
+                    <li class="link cart-links-right">Такси Арама</li>
+                  </ul>
+                  <h3
+                    id="dotdotdot"
+                    data-height="70"
+                    class="dotdotdot cart-text__title"
+                  >
+                    В заголовке не должно быть больше двух строк. Если больше,
+                    текст обрезается. В заголовке не должно быть больше двух
+                    строк. Если больше, текст обрезается.
+                  </h3>
+                  <p
+                    id="dotdotdot"
+                    data-height="62"
+                    class="dotdotdot cart-text__text"
+                  >
+                    В лиде новости не может быть больше 5 строк. Проснувшись
+                    однажды утром после беспокойного сна, Грегор Замза
+                    обнаружил, что он у себя в постели превратился в страшное
+                    насекомое. Лежа на панцирнотвердой спине, он видел, стоило
+                    ему приподнять голову, свой коричневый, выпуклый,
+                    разделенный дугообразными чешуйками живот, на верхушке
+                    которого еле держалось готовое вот-вот окончательно сползти
+                    одеяло.
+                  </p>
+                  <div class="cart-footer">
+                    <div class="cart-footer__info">
+                      <p class="cart-footer__date">04.02.2020</p>
+                      <p class="cart-footer__status">Завершено</p>
+                    </div>
+                    <ul class="cart-footer__stats">
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--like">
+                          <use
+                            xlink:href="./assets/icons/svg/like.svg#like"
+                          ></use></svg
+                        ><span>123</span>
+                      </li>
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--comment">
+                          <use
+                            xlink:href="./assets/icons/svg/comment.svg#comment"
+                          ></use></svg
+                        ><span>76</span>
+                      </li>
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--view">
+                          <use
+                            xlink:href="./assets/icons/svg/view.svg#view"
+                          ></use></svg
+                        ><span>34</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="specials">
+                <img
+                  class="specials-img"
+                  src="./assets/images/cart-img.png"
+                  alt="news-img"
+                />
+                <div class="specials-content">
+                  <div class="cart-star">
+                    <svg class="icon icon--star">
+                      <use xlink:href="./assets/icons/svg/star.svg#star"></use>
+                    </svg>
+                  </div>
+                  <ul class="cart-links">
+                    <li class="link cart-links-left">Экскурсии</li>
+                    <li class="link cart-links-right">
+                      ОАО «Спутник Москвича»
+                    </li>
+                  </ul>
+                  <h3
+                    id="dotdotdot"
+                    data-height="70"
+                    class="dotdotdot cart-text__title"
+                  >
+                    В заголовке не должно быть больше двух строк. Если больше,
+                    текст обрезается. В заголовке не должно быть больше двух
+                    строк. Если больше, текст обрезается.
+                  </h3>
+                  <p
+                    id="dotdotdot"
+                    data-height="62"
+                    class="dotdotdot cart-text__text"
+                  >
+                    В лиде новости не может быть больше 5 строк. Проснувшись
+                    однажды утром после беспокойного сна, Грегор Замза
+                    обнаружил, что он у себя в постели превратился в страшное
+                    насекомое. Лежа на панцирнотвердой спине, он видел, стоило
+                    ему приподнять голову, свой коричневый, выпуклый,
+                    разделенный дугообразными чешуйками живот, на верхушке
+                    которого еле держалось готовое вот-вот окончательно сползти
+                    одеяло.
+                  </p>
+                  <div class="cart-footer">
+                    <div class="cart-footer__info">
+                      <p class="cart-footer__date">04.02.2020</p>
+                      <p class="cart-footer__status">Предложение активно</p>
+                    </div>
+                    <ul class="cart-footer__stats">
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--like">
+                          <use
+                            xlink:href="./assets/icons/svg/like.svg#like"
+                          ></use></svg
+                        ><span>123</span>
+                      </li>
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--comment">
+                          <use
+                            xlink:href="./assets/icons/svg/comment.svg#comment"
+                          ></use></svg
+                        ><span>76</span>
+                      </li>
+                      <li class="cart-footer__stats-item">
+                        <svg class="icon icon--view">
+                          <use
+                            xlink:href="./assets/icons/svg/view.svg#view"
+                          ></use></svg
+                        ><span>34</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <button class="button button-arrow">
+          <span class="button-arrow__span">Смотреть еще</span>
+          <svg class="icon icon--arrow">
+            <use xlink:href="./assets/icons/svg/arrow.svg#arrow"></use>
+          </svg>
+        </button>
+      </article>
+      <aside></aside>
     </main>
     <footer class="footer">
-        <div class="footer__wrp container">
-            <div class="footer__wrp-links">
-                <div class="social-media">
-                    <a class="social-media__link" href="#">
-                        <svg class="icon icon--youtube">
-                            <use xlink:href="./assets/icons/svg/youtube.svg#youtube"></use>
-                        </svg>
-                    </a>
-                    <a class="social-media__link" href="#">
-                        <svg class="icon icon--instagram">
-                            <use xlink:href="./assets/icons/svg/instagram.svg#instagram"></use>
-                        </svg>
-                    </a>
-                </div>
-                <ul class="links">
-                    <li><a class="link links__item" href="#">Правила</a></li>
-                    <li><a class="link links__item" href="#">Документы</a></li>
-                    <li><a class="link links__item" href="#">Политика конфиденциальности</a></li>
-                </ul>
-            </div>
-            <a class="qsoft" href="#">
-                <svg class="icon icon--qsoft">
-                    <use class="qsoft__svg" xlink:href="./assets/icons/svg/qsoft.svg#qsoft"></use>
-                </svg>
+      <div class="footer__wrp container">
+        <div class="footer__wrp-links">
+          <div class="social-media">
+            <a class="social-media__link" href="#">
+              <svg class="icon icon--youtube">
+                <use xlink:href="./assets/icons/svg/youtube.svg#youtube"></use>
+              </svg>
             </a>
+            <a class="social-media__link" href="#">
+              <svg class="icon icon--instagram">
+                <use
+                  xlink:href="./assets/icons/svg/instagram.svg#instagram"
+                ></use>
+              </svg>
+            </a>
+          </div>
+          <ul class="links">
+            <li><a class="link links__item" href="#">Правила</a></li>
+            <li><a class="link links__item" href="#">Документы</a></li>
+            <li>
+              <a class="link links__item" href="#"
+                >Политика конфиденциальности</a
+              >
+            </li>
+          </ul>
         </div>
+        <a class="qsoft" href="#">
+          <svg class="icon icon--qsoft">
+            <use
+              class="qsoft__svg"
+              xlink:href="./assets/icons/svg/qsoft.svg#qsoft"
+            ></use>
+          </svg>
+        </a>
+      </div>
     </footer>
     <script src="./public/js/script.js"></script>
-</body>
-
+  </body>
 </html>
