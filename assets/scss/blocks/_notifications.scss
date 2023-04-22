@@ -1,5 +1,5 @@
 .notifications {
-  display: none;
+  display: none !important;
 
   @media #{$screen-desktop} {
     display: block;
