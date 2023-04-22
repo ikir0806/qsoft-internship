@@ -1,61 +1,67 @@
 .notifications {
-    &__cart {
-        min-width: rem(286px);
-        height: rem(150px);
-        background-color: $white;
-        margin-right: rem(30px);
-        position: relative;
-        box-shadow: $box-shadow;
-        border-radius: $border-radius;
+  display: none;
 
-        @media #{$screen-desktop} {
-            margin-right: rem(32px);
-        }
+  @media #{$screen-desktop} {
+    display: block;
+  }
+
+  &__cart {
+    min-width: rem(286px);
+    height: rem(150px);
+    background-color: $white;
+    margin-right: rem(30px);
+    position: relative;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+
+    @media #{$screen-desktop} {
+      margin-right: rem(32px);
     }
+  }
 
-    &__title {
-        font-size: $font-size-base-big;
-        font-family: $font-family-default;
-        font-weight: $font-weight-medium;
-        -webkit-line-clamp: 1;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        padding: rem(16px) 0 0 rem(16px);
-        margin: 0;
-    }
+  &__title {
+    font-size: $font-size-base-big;
+    font-family: $font-family-default;
+    font-weight: $font-weight-medium;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding: rem(16px) 0 0 rem(16px);
+    margin: 0;
+  }
 
-    &__text {
-        font-size: $font-size-base-medium;
-        font-family: $font-family-custom;
-        font-weight: $font-weight-regular;
-        /* -webkit-line-clamp: 3;
+  &__text {
+    font-size: $font-size-base-medium;
+    font-family: $font-family-custom;
+    font-weight: $font-weight-regular;
+    /* -webkit-line-clamp: 3;
         display: -webkit-box;
         -webkit-box-orient: vertical; */
-        overflow: hidden;
-        padding: rem(10px) rem(16px) 0 rem(16px);
-        margin: 0;
-    }
+    overflow: hidden;
+    padding: rem(10px) rem(16px) 0 rem(16px);
+    margin: 0;
+  }
 
-    &__buttons {
-        display: flex;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        gap: rem(15px);
-    }
+  &__buttons {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    gap: rem(15px);
+  }
 
-    &__button {
-        max-width: 100%;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 0;
-        font-size: $font-size-base-medium;
-        font-weight: $font-weight-regular;
-        font-family: $font-family-custom;
+  &__button {
+    max-width: 100%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    font-size: $font-size-base-medium;
+    font-weight: $font-weight-regular;
+    font-family: $font-family-custom;
 
-        &-span {
-            display: block;
-            padding: rem(6px) rem(30px);
-        }
+    &-span {
+      display: block;
+      padding: rem(6px) rem(30px);
     }
+  }
 }
